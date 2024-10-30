@@ -20,7 +20,7 @@ body {
 }
 
 h1, h2, h3 {
-    color: var(--primary-color);
+    color: var(--neutral-color);
     width: 100%;
     text-align: center;
 }
@@ -57,7 +57,7 @@ nav {
     display: flex;
     /* flex-direction: horizontal; */
     justify-content: space-around;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     width: 100%;
 }
 
@@ -75,7 +75,7 @@ nav ul li {
 }
 
 nav a {
-    color: var(--background-color);
+    color: black;
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -84,7 +84,7 @@ nav a {
 nav a:hover {
     /* background-color: var(--secondary-color); */
     /* color: white; */
-    color: var(--accent-color);
+    color: white;
 }
 
 footer {
@@ -187,7 +187,7 @@ section {
     background-color: var(--primary-color);
     margin: 5px;
     padding: 5px;
-    color: white;
+    color: black;
     font-size: 1.2rem;
 }
 
