@@ -55,7 +55,7 @@ footer {
 
 nav {
     display: flex;
-    flex-direction: horizontal;
+    /* flex-direction: horizontal; */
     justify-content: space-around;
     background-color: var(--primary-color);
     width: 100%;
@@ -149,7 +149,7 @@ section {
 
 .cert-filters {
     display: flex;
-    flex-direction: horizontal;
+    /* flex-direction: horizontal; */
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 1px solid var(--neutral-color);
@@ -165,6 +165,11 @@ section {
     margin: 2px;
     width: 20%;
     text-align: center;
+}
+
+.cert-filter-item:hover {
+    background-color: var(--secondary-color);
+    color: var(--neutral-color);
 }
 
 .active {
