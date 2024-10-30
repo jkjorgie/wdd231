@@ -84,7 +84,7 @@ function displayCoursesBySubject(subject) {
 
     let filteredCourses;
 
-    if (subject != "ALL") {
+    if (subject != 'ALL') {
         filteredCourses = courses.filter(course => course.subject === subject);
     } else {
         filteredCourses = courses;
@@ -99,43 +99,51 @@ function displayCoursesBySubject(subject) {
         }
         coursesDiv.appendChild(courseDiv);
     });
+
+    const creditCount = courses.reduce((count, currentValue) => {
+        return count + currentValue.credits;
+    }, 0);
+    const creditsP = document.createElement('p');
+    creditsP.textContent = `Certificate requires ${creditCount} credits.`;
+    creditsP.classList.add('credits');
+    coursesDiv.appendChild(creditsP);
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector(".hamburger");
-    const nav = document.querySelector("nav");
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
 
-    hamburger.addEventListener("click", function () {
-        nav.classList.toggle("active");
+    hamburger.addEventListener('click', function () {
+        nav.classList.toggle('active');
     });
 });
 
 const currentYear = new Date().getFullYear();
-document.getElementById("currentyear").textContent = currentYear;
+document.getElementById('currentyear').textContent = currentYear;
 
-document.getElementById("lastModified").textContent = document.lastModified;
+document.getElementById('lastModified').textContent = document.lastModified;
 
-document.querySelector("#all-filter").addEventListener('click', () => {
-    displayCoursesBySubject("ALL");
-    document.querySelector("#wdd-filter").classList.remove('active');
-    document.querySelector("#cse-filter").classList.remove('active');
-    document.querySelector("#all-filter").classList.add('active');
+document.querySelector('#all-filter').addEventListener('click', () => {
+    displayCoursesBySubject('ALL');
+    document.querySelector('#wdd-filter').classList.remove('active');
+    document.querySelector('#cse-filter').classList.remove('active');
+    document.querySelector('#all-filter').classList.add('active');
 });
 
-document.querySelector("#cse-filter").addEventListener('click', () => {
-    displayCoursesBySubject("CSE");
-    document.querySelector("#wdd-filter").classList.remove('active');
-    document.querySelector("#cse-filter").classList.add('active');
-    document.querySelector("#all-filter").classList.remove('active');
+document.querySelector('#cse-filter').addEventListener('click', () => {
+    displayCoursesBySubject('CSE');
+    document.querySelector('#wdd-filter').classList.remove('active');
+    document.querySelector('#cse-filter').classList.add('active');
+    document.querySelector('#all-filter').classList.remove('active');
 });
 
-document.querySelector("#wdd-filter").addEventListener('click', () => {
-    displayCoursesBySubject("WDD");
-    document.querySelector("#wdd-filter").classList.add('active');
-    document.querySelector("#cse-filter").classList.remove('active');
-    document.querySelector("#all-filter").classList.remove('active');
+document.querySelector('#wdd-filter').addEventListener('click', () => {
+    displayCoursesBySubject('WDD');
+    document.querySelector('#wdd-filter').classList.add('active');
+    document.querySelector('#cse-filter').classList.remove('active');
+    document.querySelector('#all-filter').classList.remove('active');
 });
 
 // handle initial display
-displayCoursesBySubject("ALL");
-document.querySelector("#all-filter").classList.add('active');
+displayCoursesBySubject('ALL');
+document.querySelector('#all-filter').classList.add('active');

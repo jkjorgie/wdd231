@@ -118,6 +118,11 @@ footer p {
     grid-column: 1 / 4;
 }
 
+.credits {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
 /* .active-nav-link {
     color: var(--background-color);
     text-decoration: underline;
@@ -238,5 +243,10 @@ section {
 
     .courses {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .credits {
+        grid-column: 1 / 1;
+        text-align: center;
     }
 }
