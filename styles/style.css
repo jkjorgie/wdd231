@@ -118,10 +118,10 @@ footer p {
     grid-column: 1 / 4;
 }
 
-.active-nav-link {
-    /* color: var(--background-color); */
+/* .active-nav-link {
+    color: var(--background-color);
     text-decoration: underline;
-}
+} */
 
 .montevideo {
     display: flex;
