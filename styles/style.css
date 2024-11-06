@@ -44,6 +44,7 @@ nav {
     border: none;
     cursor: pointer;
     color: white;
+    padding-right: 10px;
 }
 
 header,
@@ -98,6 +99,8 @@ footer p {
 }
 
 .header-top {
+    /* display: grid;
+    grid-template-columns: auto 40px; */
     display: flex;
     justify-content: space-between;
     background-color: var(--neutral-color);
@@ -203,15 +206,29 @@ section {
 }
 
 @media (max-width: 768px) {
-    nav {
+    /* nav {
         display: none;
-        /* flex-direction: column; */
         width: 100%;
+    } */
+
+    nav {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
     }
 
     nav ul {
         flex-direction: column;
         width: 100%;
+        overflow: hidden;
+    }
+
+    ul.menu-links {
+        list-style-type: none;
+    }
+
+    nav.active {
+        grid-template-rows: 1fr;
     }
 
     nav ul li {
@@ -220,10 +237,22 @@ section {
 
     .hamburger {
         display: block;
+        /* padding-right: 10px; */
+    }
+
+    .hamburger::before {
+        content: "\2630";
+    }
+
+    .hamburger.open::before {
+        content: "x";
+        text-decoration: none;
+        padding-right: 5px;
     }
 
     nav.active {
         display: flex;
+        text-decoration: none;
     }
 
     .main-top {
