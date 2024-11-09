@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Tech Innovations Inc.",
+        "address": "1234 Silicon Valley, San Francisco, CA 94101",
+        "phone": "(555) 123-4567",
+        "website": "https://www.techinnovations.com",
+        "image": "tech_innovations_logo.png",
+        "membership_level": 3,
+        "description": "Leading provider of innovative technology solutions."
+    },
+    {
+        "name": "Green Earth Solutions",
+        "address": "5678 Green St, Portland, OR 97209",
+        "phone": "(555) 987-6543",
+        "website": "https://www.greenearthsolutions.com",
+        "image": "green_earth_logo.png",
+        "membership_level": 2,
+        "description": "Eco-friendly products and services to support sustainable living."
+    },
+    {
+        "name": "Local Eats Restaurant",
+        "address": "2468 Main Ave, Denver, CO 80203",
+        "phone": "(555) 333-2211",
+        "website": "https://www.localeatsrestaurant.com",
+        "image": "localeats_logo.png",
+        "membership_level": 1,
+        "description": "A locally-sourced restaurant offering delicious comfort food."
+    },
+    {
+        "name": "Elite Marketing Group",
+        "address": "7890 Marketing Blvd, New York, NY 10010",
+        "phone": "(555) 555-5555",
+        "website": "https://www.elitemarketing.com",
+        "image": "elite_marketing_logo.png",
+        "membership_level": 3,
+        "description": "Full-service marketing agency specializing in digital strategies."
+    },
+    {
+        "name": "Fitness Central Gym",
+        "address": "1357 Health Dr, Chicago, IL 60614",
+        "phone": "(555) 444-1234",
+        "website": "https://www.fitnesscentralgym.com",
+        "image": "fitness_central_logo.png",
+        "membership_level": 2,
+        "description": "State-of-the-art gym offering personalized fitness plans."
+    },
+    {
+        "name": "Artisan Craft Brewery",
+        "address": "8642 Brewery Ln, Austin, TX 73301",
+        "phone": "(555) 555-1234",
+        "website": "https://www.artisancraftbrewery.com",
+        "image": "artisan_brewery_logo.png",
+        "membership_level": 1,
+        "description": "Handcrafted beers with local ingredients, brewed to perfection."
+    },
+    {
+        "name": "Tech Savvy Solutions",
+        "address": "3210 Innovation Park, Boston, MA 02110",
+        "phone": "(555) 667-8910",
+        "website": "https://www.techsavvysolutions.com",
+        "image": "techsavvy_logo.png",
+        "membership_level": 2,
+        "description": "IT support and cybersecurity solutions for small businesses."
+    }
+]
