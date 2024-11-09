@@ -29,6 +29,10 @@ footer {
     color: var(--neutral-light-color);
 }
 
+main {
+    max-width: 60%;
+}
+
 .header-top {
     display: flex;
     /* background-color: #2C2C2C; */
@@ -107,6 +111,39 @@ nav ul a {
     text-decoration: underline;
 }
 
+.active-view {
+    background-color: var(--accent-color);
+}
+
+.directory {
+    text-align: center;
+}
+
+.business {
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+.business-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.business-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.business-contact-info p {
+    text-align: center;
+    margin: 4px;
+}
+
 .dashboard {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -162,12 +199,17 @@ nav ul a {
 .business {
     border-radius: 10px;
     background-color:var(--highlight-color);
+    padding-bottom: 10px;
 }
 
 .business-header {
     border-bottom: 1px solid var(--secondary-color);
     text-align: center;
     padding: 10px;
+    background-color: var(--neutral-dark-color);
+    color: var(--neutral-light-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .business-header h4 {
@@ -191,6 +233,11 @@ nav ul a {
 
 .business-details p {
     margin: 4px;
+}
+
+#businesses-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -223,6 +270,34 @@ footer {
     margin: 4px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: var(--neutral-dark-color);
+    color: var(--neutral-light-color);
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping */
+}
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.table-link {
+    overflow-wrap: break-word;
+}
+
+.table-business-name {
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .dashboard {
         grid-template-columns: 1fr;
@@ -247,6 +322,11 @@ footer {
     .header-top-left img {
         width: 49px;
         height: auto;
+    }
+
+    main {
+        margin: 0;
+        max-width: 100%;
     }
 
     nav {
@@ -303,33 +383,26 @@ footer {
         padding-right: 5px;
     }
 
-    /* nav {
-        display: grid;
-        grid-template-rows: 0fr;
-        transition: grid-template-rows 0.5s ease-out;
-    }
-
-    nav.active {
-        grid-template-rows: 1fr;
-        display: flex;
-        text-decoration: none;
-    }
-
-    .hamburger {
+    table, thead, tbody, th, td, tr {
         display: block;
-        background-color: var(--neutral-dark-color);
-        color: var(--neutral-light-color);
-        margin: 10%;
+    }
+    th {
+        display: none;
+    }
+    td {
+        display: block;
+        text-align: center;
         border: none;
+        position: relative;
+        /* padding-left: 50%; */
     }
-
-    .hamburger::before {
-        content: "\2630";
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
     }
-
-    .hamburger.open::before {
-        content: "x";
-        text-decoration: none;
-        padding-right: 5px;
-    } */
 }

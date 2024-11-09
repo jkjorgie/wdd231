@@ -25,7 +25,6 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <script src="scripts/script.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
@@ -42,8 +41,8 @@
             <div class="header-top-right">
                 <nav class="animate-me">
                     <ul class="menu-links">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./directory.html" class="active">Directory</a></li>
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./directory.html">Directory</a></li>
                         <li><a href="#join">Join</a></li>
                         <li><a href="#discover">Discover</a></li>
                     </ul>
@@ -58,74 +57,77 @@
         </div>
     </header>
 
-    <main class="directory">
-        <h2>Business Directory</h2>
-        <div class="view-control">
-            <button id="grid-view-button" class="active-view">
-                <img src="./images/grid-view-icon-small.webp" alt="View Business in Grid" width="50" height="50"/>
-            </button>
-            <button id="list-view-button">
-                <img src="./images/list-view-icon.webp" alt="View Business in Grid" width="50" height="50"/>
-            </button>
-        </div>
-        <div class="businesses" id="businesses-grid">
-            <div class="business">
-                <div class="business-header">
-                    <h4>Business Name</h4>
-                    <p>Business Tag Line</p>
-                </div>
-                <div class="business-details">
-                    <img src="images/logo-100x100.webp" alt="Business Logo" width="98" height="100" />
-                    <div class="business-contact-info">
-                        <p><b>EMAIL:</b> info@gmail.com</p>
-                        <p><b>PHONE:</b> 555-555-5555</p>
-                        <p><b>URL:</b> mybusiness.com</p>
+    <main>
+        <h2>Home</h2>
+        <div class="dashboard">
+            <div class="events">
+                <h3>Events</h3>
+            </div>
+            <div class="weather-current">
+                <h3>Current Weather</h3>
+                <div class="weather-current-parts">
+                    <img src="images/logo-100x100.webp" alt="Partly Cloudy" width="98" height="100" />
+                    <div class="weather-details">
+                        <p><b>75&deg;</b> F</p>
+                        <p>Partly Cloudy</p>
+                        <p>High: 85&deg;</p>
+                        <p>Low: 52&deg;</p>
+                        <p>Humidity: 34%</p>
+                        <p>Sunrise: 7:30am</p>
+                        <p>Sunset: 9:59pm</p>
                     </div>
                 </div>
             </div>
-            <div class="business">
-                <div class="business-header">
-                    <h4>Business Name</h4>
-                    <p>Business Tag Line</p>
-                </div>
-                <div class="business-details">
-                    <img src="images/logo-100x100.webp" alt="Business Logo" width="98" height="100" />
-                    <div class="business-contact-info">
-                        <p><b>EMAIL:</b> info@gmail.com</p>
-                        <p><b>PHONE:</b> 555-555-5555</p>
-                        <p><b>URL:</b> mybusiness.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="business">
-                <div class="business-header">
-                    <h4>Business Name</h4>
-                    <p>Business Tag Line</p>
-                </div>
-                <div class="business-details">
-                    <img src="images/logo-100x100.webp" alt="Business Logo" width="98" height="100" />
-                    <div class="business-contact-info">
-                        <p><b>EMAIL:</b> info@gmail.com</p>
-                        <p><b>PHONE:</b> 555-555-5555</p>
-                        <p><b>URL:</b> mybusiness.com</p>
-                    </div>
-                </div>
+            <div class="weather-forecasted">
+                <h3>Weather Forecast</h3>
+                <p>Today: <b>90&deg;F</b></p>
+                <p>Tomorrow: <b>89&deg;F</b></p>
+                <p>The Next Day: <b>68&deg;F</b></p>
             </div>
         </div>
-        <div id="businesses-list" class="hide">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Phone</th>
-                        <th>Website</th>
-                    </tr>
-                </thead>
-                <tbody id="businesses-list-table-body">
-
-                </tbody>
-            </table>
+        <div class="businesses">
+            <div class="business">
+                <div class="business-header">
+                    <h4>Business Name</h4>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="business-details">
+                    <img src="images/logo-100x100.webp" alt="Business Logo" width="98" height="100" />
+                    <div class="business-contact-info">
+                        <p><b>EMAIL:</b> info@gmail.com</p>
+                        <p><b>PHONE:</b> 555-555-5555</p>
+                        <p><b>URL:</b> mybusiness.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="business">
+                <div class="business-header">
+                    <h4>Business Name</h4>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="business-details">
+                    <img src="images/logo-100x100.webp" alt="Business Logo" width="98" height="100" />
+                    <div class="business-contact-info">
+                        <p><b>EMAIL:</b> info@gmail.com</p>
+                        <p><b>PHONE:</b> 555-555-5555</p>
+                        <p><b>URL:</b> mybusiness.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="business">
+                <div class="business-header">
+                    <h4>Business Name</h4>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="business-details">
+                    <img src="images/logo-100x100.webp" alt="Business Logo" width="98" height="100" />
+                    <div class="business-contact-info">
+                        <p><b>EMAIL:</b> info@gmail.com</p>
+                        <p><b>PHONE:</b> 555-555-5555</p>
+                        <p><b>URL:</b> mybusiness.com</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
