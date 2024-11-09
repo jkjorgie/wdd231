@@ -44,7 +44,7 @@ main {
 
 .header-top-left {
     display: flex;
-    display: space-around;
+    justify-content: space-around;
     align-items: center;
     gap: 10px;
 }
