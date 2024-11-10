@@ -50,6 +50,7 @@ async function generateBusinessCards() {
             phoneP.textContent = business.phone;
             contactInfo.appendChild(phoneP);
             const link = document.createElement('a');
+            link.classList.add('grid-link');
             link.href = business.website;
             link.textContent = business.website;
             link.target = '_blank';

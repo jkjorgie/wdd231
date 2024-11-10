@@ -240,6 +240,10 @@ nav ul a {
     margin-bottom: 20px;
 }
 
+.grid-link {
+    color: var(--neutral-dark-color);
+}
+
 footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
