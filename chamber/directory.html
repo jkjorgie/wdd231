@@ -9,8 +9,7 @@
     <title>American Fork Chamber of Commerce</title>
     <meta property="og:title" content="American Fork Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://jkjorgie.github.io/wdd231/chamber/images/orig-favicon.png">
+    <meta property="og:image" content="https://jkjorgie.github.io/wdd231/chamber/images/orig-favicon.png">
     <meta property="og:url" content="https://jkjorgie.github.io/wdd231/chamber/directory.html">
     <meta property="og:description" content="American Fork Chamber of Commerce Directory">
     <meta property="og:image:alt" content="Arches National Park">
@@ -20,10 +19,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+        rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+        rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <script src="scripts/script.js" defer></script>
     <script src="scripts/directory.js" defer></script>
 </head>
@@ -70,10 +69,10 @@
         <h2>Business Directory</h2>
         <div class="view-control">
             <button id="grid-view-button" class="active-view">
-                <img src="./images/grid-view-icon-small.webp" alt="View Business in Grid" width="50" height="50"/>
+                <img src="./images/grid-view-icon-small.webp" alt="View Business in Grid" width="50" height="50" />
             </button>
             <button id="list-view-button">
-                <img src="./images/list-view-icon.webp" alt="View Business in Grid" width="50" height="50"/>
+                <img src="./images/list-view-icon.webp" alt="View Business in Grid" width="50" height="50" />
             </button>
         </div>
         <div class="businesses" id="businesses-grid">
