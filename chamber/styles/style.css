@@ -306,7 +306,7 @@ tr:nth-child(odd) {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .header-nav {
         display: none;
     }
@@ -416,5 +416,20 @@ tr:nth-child(odd) {
         padding-left: 15px;
         font-weight: bold;
         text-align: left;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1300px) {
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .businesses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
