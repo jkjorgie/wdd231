@@ -302,7 +302,15 @@ tr:nth-child(odd) {
     font-weight: bold;
 }
 
+.animate-me {
+    display: none;
+}
+
 @media (max-width: 768px) {
+    .header-nav {
+        display: none;
+    }
+
     .dashboard {
         grid-template-columns: 1fr;
     }
