@@ -341,9 +341,9 @@ tr:nth-child(odd) {
         max-width: 100%;
     }
 
-    nav {
+    nav  {
         display: none;
-        grid-template-rows: 0fr;
+        /* grid-template-rows: 0fr; */
         transition: grid-template-rows 0.5s ease-out;
     }
 
@@ -358,7 +358,7 @@ tr:nth-child(odd) {
     }
 
     nav.active {
-        grid-template-rows: 1fr;
+        /* grid-template-rows: 1fr; */
         display: flex;
         text-decoration: none;
     }
