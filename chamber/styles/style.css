@@ -199,7 +199,7 @@ nav ul a {
 
 .business {
     border-radius: 10px;
-    background-color:var(--highlight-color);
+    background-color: var(--highlight-color);
     padding-bottom: 10px;
 }
 
@@ -279,18 +279,24 @@ table {
     width: 100%;
     border-collapse: collapse;
 }
-th, td {
+
+th,
+td {
     padding: 12px;
     text-align: left;
     border: 1px solid #ddd;
 }
+
 th {
     background-color: var(--neutral-dark-color);
     color: var(--neutral-light-color);
 }
+
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* Zebra striping */
+    background-color: #f2f2f2;
+    /* Zebra striping */
 }
+
 tr:nth-child(odd) {
     background-color: #ffffff;
 }
@@ -307,7 +313,7 @@ tr:nth-child(odd) {
     display: none;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
     .header-nav {
         display: none;
     }
@@ -342,7 +348,7 @@ tr:nth-child(odd) {
         max-width: 100%;
     }
 
-    nav  {
+    nav {
         display: none;
         /* grid-template-rows: 0fr; */
         transition: grid-template-rows 0.5s ease-out;
@@ -396,12 +402,19 @@ tr:nth-child(odd) {
         padding-right: 5px;
     }
 
-    table, thead, tbody, th, td, tr {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
         display: block;
     }
+
     th {
         display: none;
     }
+
     td {
         display: block;
         text-align: center;
@@ -409,6 +422,7 @@ tr:nth-child(odd) {
         position: relative;
         /* padding-left: 50%; */
     }
+
     td::before {
         content: attr(data-label);
         position: absolute;
