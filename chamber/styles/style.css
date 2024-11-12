@@ -307,7 +307,7 @@ tr:nth-child(odd) {
     display: none;
 }
 
-@media (max-width: 799px) {
+@media (max-width: 599px) {
     .header-nav {
         display: none;
     }
@@ -420,7 +420,7 @@ tr:nth-child(odd) {
     }
 }
 
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (min-width: 700px) and (max-width: 900px) {
 
     .dashboard {
         grid-template-columns: repeat(2, 1fr);
