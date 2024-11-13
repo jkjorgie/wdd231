@@ -57,7 +57,7 @@ function generateBusinessCards(members) {
         const link = document.createElement('a');
         link.classList.add('grid-link');
         link.href = business.website;
-        link.textContent = business.website;
+        link.textContent = 'Website';
         link.target = '_blank';
         contactInfo.appendChild(link);
         businessDetails.appendChild(contactInfo);
