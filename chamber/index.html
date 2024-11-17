@@ -19,12 +19,13 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet"> -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -63,6 +64,13 @@
                 <li><a href="#discover">Discover</a></li>
             </ul>
         </nav>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 700px)" srcset="./images/hero-large.webp">
+                <source media="(max-width: 699px)" srcset="./images/hero-small.webp">
+                <img src="images/hero-large.webp" alt="Beautiful American Fork Skyline" loading="lazy">
+            </picture>
+        </section>
     </header>
 
     <main>
@@ -74,28 +82,32 @@
             <div class="weather-current">
                 <h3>Current Weather</h3>
                 <div class="weather-current-parts">
-                    <img src="images/logo-100x100.webp" alt="Partly Cloudy" width="98" height="100" />
+                    <img id="weather-icon" src="x" alt="x" width="50" height="50" />
+                    <!-- <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure> -->
                     <div class="weather-details">
-                        <p><b>75&deg;</b> F</p>
-                        <p>Partly Cloudy</p>
-                        <p>High: 85&deg;</p>
-                        <p>Low: 52&deg;</p>
-                        <p>Humidity: 34%</p>
-                        <p>Sunrise: 7:30am</p>
-                        <p>Sunset: 9:59pm</p>
+                        <p><b><span id="current-temp"></span>&deg;</b> F</p>
+                        <p><span id="weather-descr"></span></p>
+                        <p>High: <span id="temp-max"></span>&deg;</p>
+                        <p>Low: <span id="temp-min"></span>&deg;</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Sunrise: <span id="sunrise"></span></p>
+                        <p>Sunset: <span id="sunset"></span></p>
                     </div>
                 </div>
             </div>
             <div class="weather-forecasted">
                 <h3>Weather Forecast</h3>
-                <p>Today: <b>90&deg;F</b></p>
-                <p>Tomorrow: <b>89&deg;F</b></p>
-                <p>The Next Day: <b>68&deg;F</b></p>
+                <p>Today: <b><span id="forecast-today"></span>&deg;F</b></p>
+                <p>Tomorrow: <b><span id="forecast-tomorrow"></span>&deg;F</b></p>
+                <p>The Next Day: <b><span id="forecast-next-day"></span>&deg;F</b></p>
             </div>
         </div>
         <div class="businesses">
             <div class="business">
-                <div class="business-header">
+                <!-- <div class="business-header">
                     <h4>Business Name</h4>
                     <p>Business Tag Line</p>
                 </div>
@@ -106,10 +118,10 @@
                         <p><b>PHONE:</b> 555-555-5555</p>
                         <p><b>URL:</b> mybusiness.com</p>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="business">
-                <div class="business-header">
+                <!-- <div class="business-header">
                     <h4>Business Name</h4>
                     <p>Business Tag Line</p>
                 </div>
@@ -120,10 +132,10 @@
                         <p><b>PHONE:</b> 555-555-5555</p>
                         <p><b>URL:</b> mybusiness.com</p>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="business">
-                <div class="business-header">
+                <!-- <div class="business-header">
                     <h4>Business Name</h4>
                     <p>Business Tag Line</p>
                 </div>
@@ -134,7 +146,7 @@
                         <p><b>PHONE:</b> 555-555-5555</p>
                         <p><b>URL:</b> mybusiness.com</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
