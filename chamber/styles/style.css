@@ -336,6 +336,14 @@ tr:nth-child(odd) {
     font-size: 1.3rem;
 }
 
+#hero-small {
+    display: none;
+}
+
+#hero-large {
+    display: block;
+}
+
 @media (max-width: 699px) {
     .header-nav {
         display: none;
@@ -454,6 +462,14 @@ tr:nth-child(odd) {
         padding-left: 15px;
         font-weight: bold;
         text-align: left;
+    }
+
+    #hero-small {
+        display: block;
+    }
+    
+    #hero-large {
+        display: none;
     }
 }
 
