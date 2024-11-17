@@ -354,6 +354,10 @@ tr:nth-child(odd) {
     color: var(--neutral-light-color);
 }
 
+.events ul li {
+    padding: 5px;
+}
+
 #weather-icon {
     padding: 15px;
 }
