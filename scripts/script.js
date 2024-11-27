@@ -78,6 +78,47 @@ const courses = [
     }
 ]
 
+function displayModal(subject, number, title, credits, description, certificate, tech) {
+    const modal = document.getElementById('course-details');
+    modal.innerHTML = "";
+
+    const modalTitle = document.createElement('h2');
+    modalTitle.textContent = `${title} (${number})`;
+    modal.appendChild(modalTitle);
+
+    const modalSubject = document.createElement('p');
+    modalSubject.textContent = `Subject: ${subject}`;
+    modal.appendChild(modalSubject);
+
+    const modalCredits = document.createElement('p');
+    modalCredits.textContent = `Credits: ${credits}`;
+    modal.appendChild(modalCredits);
+
+    const modalDescription = document.createElement('p');
+    modalDescription.textContent = `Description: ${description}`;
+    modal.appendChild(modalDescription);
+
+    const modalCertificate = document.createElement('p');
+    modalCertificate.textContent = `Certificate: ${certificate}`;
+    modal.appendChild(modalCertificate);
+
+    const modalTechStack = document.createElement('p');
+    modalTechStack.textContent = `Technology Stack: ${tech}`;
+    modal.appendChild(modalTechStack);
+
+    const closeButton = document.createElement('button');
+    closeButton.id = 'close-modal';
+    closeButton.textContent = 'Close';
+    modal.appendChild(closeButton);
+    closeButton.addEventListener('click', () => closeModal(modal));
+
+    modal.showModal();
+}
+
+function closeModal(modal) {
+    modal.close();
+}
+
 function displayCoursesBySubject(subject) {
     const coursesDiv = document.querySelector('.courses');
     coursesDiv.innerHTML = '';
@@ -97,6 +138,11 @@ function displayCoursesBySubject(subject) {
         if (course.completed) {
             courseDiv.classList.add('course-complete');
         }
+
+        courseDiv.addEventListener('click', () => {
+            displayModal(course.subject, course.number, course.title, course.credits, course.description, course.certificate, course.technology);
+        });
+
         coursesDiv.appendChild(courseDiv);
     });
 

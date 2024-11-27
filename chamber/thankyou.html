@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Members of the American Fork Chamber of Commerce">
+    <meta name="description" content="Thanks for applying for membership in the American Fork Chamber of Commerce">
     <meta name="author" content="Jay Jorgensen">
-    <title>American Fork Chamber of Commerce</title>
-    <meta property="og:title" content="American Fork Chamber of Commerce">
+    <title>Thanks for applying to the American Fork Chamber of Commerce</title>
+    <meta property="og:title" content="Thanks for applying for membership in the American Fork Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jkjorgie.github.io/wdd231/chamber/images/orig-favicon.png">
+    <meta property="og:image"
+        content="https://th.bing.com/th/id/R.3aef1fe2cb23b22cac8f75a01105da6e?rik=tQcJORXAP8cBqw&pid=ImgRaw&r=0">
     <meta property="og:url" content="https://jkjorgie.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="American Fork Chamber of Commerce Directory">
+    <meta property="og:description"
+        content="Thanks for applying for membership in the American Fork Chamber of Commerce Directory">
     <meta property="og:image:alt" content="Arches National Park">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
@@ -19,12 +21,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+        rel="stylesheet"> -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        rel="stylesheet">
     <script src="scripts/script.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
@@ -45,7 +47,7 @@
                 <nav class="header-nav">
                     <ul class="menu-links">
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="./directory.html" class="active">Directory</a></li>
+                        <li><a href="./directory.html">Directory</a></li>
                         <li><a href="./join.html">Join</a></li>
                         <li><a href="#discover">Discover</a></li>
                     </ul>
@@ -57,40 +59,22 @@
         </div>
         <nav class="animate-me">
             <ul class="menu-links">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./directory.html" class="active">Directory</a></li>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./directory.html">Directory</a></li>
                 <li><a href="#join">Join</a></li>
                 <li><a href="#discover">Discover</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="directory">
-        <h2>Business Directory</h2>
-        <div class="view-control">
-            <button id="grid-view-button" class="active-view">
-                <img src="./images/grid-view-icon-small.webp" alt="View Business in Grid" width="50" height="50" />
-            </button>
-            <button id="list-view-button">
-                <img src="./images/list-view-icon.webp" alt="View Business in Grid" width="50" height="50" />
-            </button>
-        </div>
-        <div class="businesses" id="businesses-grid">
-        </div>
-        <div id="businesses-list" class="hide">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Phone</th>
-                        <th>Website</th>
-                    </tr>
-                </thead>
-                <tbody id="businesses-list-table-body">
+    <main>
+        <div class="thank-you-content">
+            <h2>Thank you!</h2>
+            <p>Thanks for applying for membership in the American Fork Chamber of Commerce. Your application will be
+                reviewed soon.</p>
+            <div class="form-data">
 
-                </tbody>
-            </table>
+            </div>
         </div>
     </main>
 
