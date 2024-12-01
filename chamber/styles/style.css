@@ -34,6 +34,10 @@ main {
     max-width: 900px;
 }
 
+main h2 {
+    text-align: center;
+}
+
 .header-top {
     display: flex;
     /* background-color: #2C2C2C; */
@@ -508,11 +512,48 @@ tr:nth-child(odd) {
 }
 
 .discover-content .left-side-bar {
+    text-align: center;
+}
 
+.left-card {
+    border: 1px solid var(--neutral-dark-color);
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    max-width: 300px;
+    margin: 0 auto;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.left-card p {
+    text-align: left;
+    padding: 10px;
+}
+
+.left-card img {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.discover-events p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .discover-content .main-content {
+    text-align: center;
+}
 
+.main-content .discover-image {
+    padding: 10px;
+}
+
+.discover-image img {
+    border-radius: 10px;
 }
 
 @keyframes fadeInBounce-non-profit {
@@ -765,6 +806,10 @@ button.open-modal:hover {
     }
 
     .join-content {
+        grid-template-columns: 1fr;
+    }
+
+    .discover-content {
         grid-template-columns: 1fr;
     }
 }
