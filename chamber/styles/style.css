@@ -835,6 +835,10 @@ button.open-modal:hover {
     .discover-image img:hover {
         border: none;
     }
+
+    .small-form-factor {
+        display: block;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
