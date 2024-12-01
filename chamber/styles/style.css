@@ -502,6 +502,19 @@ tr:nth-child(odd) {
     margin-bottom: 10px;
 }
 
+.discover-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.discover-content .left-side-bar {
+
+}
+
+.discover-content .main-content {
+
+}
+
 @keyframes fadeInBounce-non-profit {
     0% {
         opacity: 0;
