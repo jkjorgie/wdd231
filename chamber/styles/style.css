@@ -556,6 +556,18 @@ tr:nth-child(odd) {
     border-radius: 10px;
 }
 
+.discover-image img:hover {
+    border: 3px solid var(--neutral-dark-color);
+}
+
+.small-form-factor {
+    display: none;
+}
+
+#welcome-message {
+    text-align: center;
+}
+
 @keyframes fadeInBounce-non-profit {
     0% {
         opacity: 0;
@@ -811,6 +823,14 @@ button.open-modal:hover {
 
     .discover-content {
         grid-template-columns: 1fr;
+    }
+
+    .large-form-factor {
+        display: none;
+    }
+
+    .discover-image img:hover {
+        border: none;
     }
 }
 
