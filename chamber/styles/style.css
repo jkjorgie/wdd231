@@ -549,7 +549,9 @@ tr:nth-child(odd) {
 }
 
 .main-content .discover-image {
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 0px;
 }
 
 .discover-image img {
@@ -558,6 +560,7 @@ tr:nth-child(odd) {
 
 .discover-image img:hover {
     border: 3px solid var(--neutral-dark-color);
+    margin: -3px;
 }
 
 .small-form-factor {
