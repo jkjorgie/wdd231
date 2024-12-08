@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atlanta Braves">
+    <meta name="author" content="Jay Jorgensen">
+    <title>Atlanta Braves</title>
+    <meta property="og:title" content="Atlanta Braves">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Atlanta_Braves_Insignia.svg/1200px-Atlanta_Braves_Insignia.svg.png">
+    <meta property="og:url" content="https://jkjorgie.github.io/wdd231/atlanta-braves/index.html">
+    <meta property="og:description" content="Atlanta Braves">
+    <meta property="og:image:alt" content="Atlanta Braves">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+                <img src="images/braves-logo-100x94.webp" alt="Atlanta Braves" width="100" height="94" />
+                <div class="header-title">
+                    <h1>Atlanta Braves</h1>
+                    <p>Fan Page</p>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <!-- &#9776; -->
+                </button>
+                <nav class="header-nav">
+                    <ul class="menu-links">
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./player-directory.html">Player Directory</a></li>
+                        <li><a href="./subscribe.html">Subscribe</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="dark-light-toggle">
+                    <img src="images/dark-light-mode.webp" alt="Dark/Light Mode Toggle" width="25" height="25" />
+                </div> -->
+            </div>
+        </div>
+        <nav class="animate-me">
+            <ul class="menu-links">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./player-directory.html">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="./discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 700px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Truist Park" width="699" height="394">
+            </picture>
+            <div class="hero-overlay">
+                <a href="#join" class="join-button">Subscribe</a>
+            </div>
+        </section>
+        <h2>Home</h2>
+        <div class="main-content">
+            <div class="left-side-panel">
+                <div class="card">
+                    <h3>Ballpark Weather</h3>
+                    <div class="weather-card">
+                        <img id="weather-icon" src="images/braves-logo-100x94.webp" alt="x" width="50" height="50" />
+                        <div class="weather-details">
+                            <p><b><span id="current-temp"></span>&deg;</b> F</p>
+                            <!-- <p><span id="weather-descr"></span></p> -->
+                            <p>High: <span id="temp-max"></span>&deg;</p>
+                            <p>Low: <span id="temp-min"></span>&deg;</p>
+                            <p>Humidity: <span id="humidity"></span>%</p>
+                            <p>Sunrise: <span id="sunrise"></span></p>
+                            <p>Sunset: <span id="sunset"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-panel"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="project-info">
+            <p>WDD231 Class Project</p>
+            <p>Jay Jorgensen</p>
+            <p>&copy; <span id="currentyear"></span> Atlanta Braves Fan Page</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+            <a href="./attributions.html">Attributions</a>
+        </div>
+        <!-- <div class="attributions">
+            <a href="./attributions.html">Attributions</a>
+        </div> -->
+    </footer>
+</body>
+
+</html>
