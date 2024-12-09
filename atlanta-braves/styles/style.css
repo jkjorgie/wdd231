@@ -189,8 +189,8 @@ nav ul a {
 }
 
 .join-button {
-    background-color: white;
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
     padding: 15px 30px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -201,9 +201,8 @@ nav ul a {
 }
 
 .join-button:hover {
-    background-color: var(--neutral-dark-color);
-    /* Darker CTA button color on hover */
-    color: var(--neutral-light-color);
+    background-color: white;
+    color: var(--secondary-color);
 }
 
 main h2 {
