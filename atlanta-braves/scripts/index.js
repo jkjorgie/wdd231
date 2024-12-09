@@ -71,7 +71,11 @@ const modalCloseButton = modal.querySelector('.modal-close');
 article1OpenButton.addEventListener('click', () => {
     const iframe = document.querySelector('.modal-iframe');
     iframe.src = 'https://www.si.com/mlb/yankees/news/max-fried-expected-to-sign-with-yankees-or-red-sox-per-insider-john9';
-    iframe.width = '600';
+    if (window.innerWidth >= 650) {
+        iframe.width = '600';
+    } else {
+        iframe.width = window.innerWidth - 50;
+    }
     iframe.height = '400';
     iframe.title = 'Article';
     modal.showModal();
@@ -80,7 +84,11 @@ article1OpenButton.addEventListener('click', () => {
 article3OpenButton.addEventListener('click', () => {
     const iframe = document.querySelector('.modal-iframe');
     iframe.src = 'https://www.si.com/mlb/braves/news/atlanta-braves-miss-out-on-premier-shortstop-01jehnwvjeyj';
-    iframe.width = '600';
+    if (window.innerWidth >= 650) {
+        iframe.width = '600';
+    } else {
+        iframe.width = window.innerWidth - 50;
+    }
     iframe.height = '400';
     iframe.title = 'Article';
     modal.showModal();
