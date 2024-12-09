@@ -95,11 +95,15 @@ article3OpenButton.addEventListener('click', () => {
 });
 
 modalCloseButton.addEventListener('click', () => {
+    const iframe = document.querySelector('.modal-iframe');
+    iframe.src = "";
     modal.close();
 });
 
 modal.addEventListener('click', (event) => {
     if (event.target === modal) {
+        const iframe = document.querySelector('.modal-iframe');
+        iframe.src = "";
         modal.close();
     }
 });
