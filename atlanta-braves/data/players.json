@@ -40,7 +40,7 @@
       "position": "Pitcher",
       "years": "1987-2002, 2008",
       "headshot": "./images/players/tom-glavine.webp",
-      "image_height": "302",
+      "image_height": "288",
       "notable_stats": {
         "wins": 244,
         "ERA": 3.41,
@@ -64,7 +64,7 @@
       "position": "Outfielder",
       "years": "2018-present",
       "headshot": "./images/players/ronald-acuna-jr.webp",
-      "image_height": "302",
+      "image_height": "414",
       "notable_stats": {
         "home_runs": 143,
         "batting_average": 0.289,
@@ -100,7 +100,7 @@
       "position": "2B",
       "years": "2017-present",
       "headshot": "./images/players/ozzie-albies.webp",
-      "image_height": "302",
+      "image_height": "423",
       "notable_stats": {
         "home_runs": 117,
         "batting_average": 0.270,
@@ -124,7 +124,7 @@
       "position": "Pitcher",
       "years": "2021-present",
       "headshot": "./images/players/spencer-strider.webp",
-      "image_height": "302",
+      "image_height": "313",
       "notable_stats": {
         "ERA": 3.21,
         "strikeouts": 326,
@@ -172,7 +172,7 @@
       "position": "Pitcher",
       "years": "1964-1983, 1987",
       "headshot": "./images/players/phil-niekro.webp",
-      "image_height": "302",
+      "image_height": "315",
       "notable_stats": {
         "wins": 268,
         "ERA": 3.2,
