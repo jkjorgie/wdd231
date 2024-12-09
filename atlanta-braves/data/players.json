@@ -16,7 +16,7 @@
       "position": "3B",
       "years": "1993-2012",
       "headshot": "./images/players/chipper-jones.webp",
-      "image_height": "302",
+      "image_height": "250",
       "notable_stats": {
         "home_runs": 468,
         "batting_average": 0.303,
@@ -28,7 +28,7 @@
       "position": "Pitcher",
       "years": "1993-2003",
       "headshot": "./images/players/greg-maddux.webp",
-      "image_height": "302",
+      "image_height": "281",
       "notable_stats": {
         "wins": 194,
         "ERA": 2.63,
@@ -52,7 +52,7 @@
       "position": "Pitcher",
       "years": "1988-2008",
       "headshot": "./images/players/john-smoltz.webp",
-      "image_height": "302",
+      "image_height": "353",
       "notable_stats": {
         "wins": 213,
         "ERA": 3.33,
@@ -76,7 +76,7 @@
       "position": "1B",
       "years": "2010-2021",
       "headshot": "./images/players/freddie-freeman.webp",
-      "image_height": "302",
+      "image_height": "354",
       "notable_stats": {
         "home_runs": 271,
         "batting_average": 0.295,
@@ -88,7 +88,7 @@
       "position": "3B",
       "years": "2019-present",
       "headshot": "./images/players/austin-riley.webp",
-      "image_height": "302",
+      "image_height": "276",
       "notable_stats": {
         "home_runs": 103,
         "batting_average": 0.281,
@@ -112,7 +112,7 @@
       "position": "3B",
       "years": "1952-1966",
       "headshot": "./images/players/eddie-mathews.webp",
-      "image_height": "302",
+      "image_height": "327",
       "notable_stats": {
         "home_runs": 493,
         "batting_average": 0.271,
@@ -136,7 +136,7 @@
       "position": "Pitcher",
       "years": "2017-present",
       "headshot": "./images/players/max-fried.webp",
-      "image_height": "302",
+      "image_height": "348",
       "notable_stats": {
         "ERA": 3.09,
         "strikeouts": 593,
@@ -148,7 +148,7 @@
       "position": "Shortstop",
       "years": "2016-2022",
       "headshot": "./images/players/dansby-swanson.webp",
-      "image_height": "302",
+      "image_height": "374",
       "notable_stats": {
         "home_runs": 102,
         "batting_average": 0.255,
@@ -160,7 +160,7 @@
       "position": "Outfielder",
       "years": "1976-1990",
       "headshot": "./images/players/dale-murphy.webp",
-      "image_height": "302",
+      "image_height": "339",
       "notable_stats": {
         "home_runs": 371,
         "batting_average": 0.268,
@@ -184,7 +184,7 @@
       "position": "1B",
       "years": "2022-present",
       "headshot": "./images/players/matt-olson.webp",
-      "image_height": "302",
+      "image_height": "333",
       "notable_stats": {
         "home_runs": 34,
         "batting_average": 0.240,
@@ -196,7 +196,7 @@
       "position": "Outfielder",
       "years": "1996-2007",
       "headshot": "./images/players/andruw-jones.webp",
-      "image_height": "302",
+      "image_height": "326",
       "notable_stats": {
         "home_runs": 368,
         "batting_average": 0.263,
@@ -208,7 +208,7 @@
       "position": "Catcher",
       "years": "2005-2013, 2019",
       "headshot": "./images/players/brian-mccann.webp",
-      "image_height": "302",
+      "image_height": "295",
       "notable_stats": {
         "home_runs": 188,
         "batting_average": 0.277,
@@ -220,7 +220,7 @@
       "position": "Outfielder",
       "years": "1989-1996",
       "headshot": "./images/players/david-justice.webp",
-      "image_height": "302",
+      "image_height": "287",
       "notable_stats": {
         "home_runs": 160,
         "batting_average": 0.273,
