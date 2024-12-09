@@ -1,0 +1,230 @@
+[
+    {
+      "name": "Hank Aaron",
+      "position": "Outfielder",
+      "years": "1954-1974",
+      "headshot": "./images/players/hank-aaron.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 755,
+        "batting_average": 0.305,
+        "RBI": 2297
+      }
+    },
+    {
+      "name": "Chipper Jones",
+      "position": "3B",
+      "years": "1993-2012",
+      "headshot": "./images/players/chipper-jones.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 468,
+        "batting_average": 0.303,
+        "RBI": 1623
+      }
+    },
+    {
+      "name": "Greg Maddux",
+      "position": "Pitcher",
+      "years": "1993-2003",
+      "headshot": "./images/players/greg-maddux.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "wins": 194,
+        "ERA": 2.63,
+        "strikeouts": 1828
+      }
+    },
+    {
+      "name": "Tom Glavine",
+      "position": "Pitcher",
+      "years": "1987-2002, 2008",
+      "headshot": "./images/players/tom-glavine.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "wins": 244,
+        "ERA": 3.41,
+        "strikeouts": 2091
+      }
+    },
+    {
+      "name": "John Smoltz",
+      "position": "Pitcher",
+      "years": "1988-2008",
+      "headshot": "./images/players/john-smoltz.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "wins": 213,
+        "ERA": 3.33,
+        "strikeouts": 3011
+      }
+    },
+    {
+      "name": "Ronald Acuña Jr.",
+      "position": "Outfielder",
+      "years": "2018-present",
+      "headshot": "./images/players/ronald-acuna-jr.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 143,
+        "batting_average": 0.289,
+        "stolen_bases": 162
+      }
+    },
+    {
+      "name": "Freddie Freeman",
+      "position": "1B",
+      "years": "2010-2021",
+      "headshot": "./images/players/freddie-freeman.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 271,
+        "batting_average": 0.295,
+        "RBI": 941
+      }
+    },
+    {
+      "name": "Austin Riley",
+      "position": "3B",
+      "years": "2019-present",
+      "headshot": "./images/players/austin-riley.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 103,
+        "batting_average": 0.281,
+        "RBI": 303
+      }
+    },
+    {
+      "name": "Ozzie Albies",
+      "position": "2B",
+      "years": "2017-present",
+      "headshot": "./images/players/ozzie-albies.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 117,
+        "batting_average": 0.270,
+        "RBI": 437
+      }
+    },
+    {
+      "name": "Eddie Mathews",
+      "position": "3B",
+      "years": "1952-1966",
+      "headshot": "./images/players/eddie-mathews.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 493,
+        "batting_average": 0.271,
+        "RBI": 1453
+      }
+    },
+    {
+      "name": "Spencer Strider",
+      "position": "Pitcher",
+      "years": "2021-present",
+      "headshot": "./images/players/spencer-strider.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "ERA": 3.21,
+        "strikeouts": 326,
+        "wins": 18
+      }
+    },
+    {
+      "name": "Max Fried",
+      "position": "Pitcher",
+      "years": "2017-present",
+      "headshot": "./images/players/max-fried.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "ERA": 3.09,
+        "strikeouts": 593,
+        "wins": 54
+      }
+    },
+    {
+      "name": "Dansby Swanson",
+      "position": "Shortstop",
+      "years": "2016-2022",
+      "headshot": "./images/players/dansby-swanson.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 102,
+        "batting_average": 0.255,
+        "RBI": 411
+      }
+    },
+    {
+      "name": "Dale Murphy",
+      "position": "Outfielder",
+      "years": "1976-1990",
+      "headshot": "./images/players/dale-murphy.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 371,
+        "batting_average": 0.268,
+        "RBI": 1143
+      }
+    },
+    {
+      "name": "Phil Niekro",
+      "position": "Pitcher",
+      "years": "1964-1983, 1987",
+      "headshot": "./images/players/phil-niekro.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "wins": 268,
+        "ERA": 3.2,
+        "strikeouts": 2912
+      }
+    },
+    {
+      "name": "Matt Olson",
+      "position": "1B",
+      "years": "2022-present",
+      "headshot": "./images/players/matt-olson.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 34,
+        "batting_average": 0.240,
+        "RBI": 103
+      }
+    },
+    {
+      "name": "Andruw Jones",
+      "position": "Outfielder",
+      "years": "1996-2007",
+      "headshot": "./images/players/andruw-jones.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 368,
+        "batting_average": 0.263,
+        "RBI": 1117
+      }
+    },
+    {
+      "name": "Brian McCann",
+      "position": "Catcher",
+      "years": "2005-2013, 2019",
+      "headshot": "./images/players/brian-mccann.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 188,
+        "batting_average": 0.277,
+        "RBI": 706
+      }
+    },
+    {
+      "name": "David Justice",
+      "position": "Outfielder",
+      "years": "1989-1996",
+      "headshot": "./images/players/david-justice.webp",
+      "image_height": "302",
+      "notable_stats": {
+        "home_runs": 160,
+        "batting_average": 0.273,
+        "RBI": 519
+      }
+    }
+  ]
