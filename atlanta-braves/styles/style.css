@@ -9,7 +9,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--primary-color);
-    background-color: var(--neutral-light-color);
+    background-color: var(--neutral-dark-color);
     margin: 0 auto;
     padding: 0;
     max-width: 1000px;

@@ -1,6 +1,5 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-// const weatherDescr = document.querySelector('#weather-descr');
 const tempMax = document.querySelector('#temp-max');
 const tempMin = document.querySelector('#temp-min');
 const humidity = document.querySelector('#humidity');
@@ -8,7 +7,6 @@ const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.89&lon=-84.47&appid=06e0d5bdf05091672310105b7f6d0e02&units=imperial';
-//const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.38&lon=-111.80&appid=06e0d5bdf05091672310105b7f6d0e02&units=imperial';
 
 async function apiFetch() {
     try {
@@ -16,13 +14,11 @@ async function apiFetch() {
         if (response.ok) {
             let data = await response.json();
             displayResults(data);
-            //console.log(data);
         } else {
             throw new Error(`API response error: ${response.text()}`);
         }
     } catch (error) {
         console.error('Error fetching data:', error);
-        throw error; // Optionally rethrow the error to handle it further up the call chain
     }
 }
 
@@ -38,7 +34,6 @@ async function forecastApiFetch() {
         }
     } catch (error) {
         console.error('Error fetching data:', error);
-        throw error; // Optionally rethrow the error to handle it further up the call chain
     }
 }
 
@@ -47,14 +42,13 @@ function convertUnixToHHMM(unixTime) {
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let mornOrAft = hours >= 12 ? 'PM' : 'AM';
-    hours = hours % 12 || 12; // Convert 0 hour to 12 for AM/PM format
+    hours = hours % 12 || 12;
     minutes = minutes < 10 ? '0' + minutes : minutes;
     return `${hours}:${minutes} ${mornOrAft}`;
 }
 
 function displayResults(data) {
     currentTemp.textContent = data.main.temp;
-    // weatherDescr.textContent = data.weather[0].description;
     tempMax.textContent = data.main.temp_max;
     tempMin.textContent = data.main.temp_min;
     humidity.textContent = data.main.humidity;
@@ -67,4 +61,38 @@ function displayResults(data) {
 }
 
 apiFetch();
-//forecastApiFetch();
+
+//modal
+
+const modal = document.querySelector('#modal');
+const article1OpenButton = document.querySelector('#article1');
+const article3OpenButton = document.querySelector('#article3');
+const modalCloseButton = modal.querySelector('.modal-close');
+
+article1OpenButton.addEventListener('click', () => {
+    const iframe = document.querySelector('.modal-iframe');
+    iframe.src = 'https://www.si.com/mlb/yankees/news/max-fried-expected-to-sign-with-yankees-or-red-sox-per-insider-john9';
+    iframe.width = '600';
+    iframe.height = '400';
+    iframe.title = 'Article';
+    modal.showModal();
+});
+
+article3OpenButton.addEventListener('click', () => {
+    const iframe = document.querySelector('.modal-iframe');
+    iframe.src = 'https://www.si.com/mlb/braves/news/atlanta-braves-miss-out-on-premier-shortstop-01jehnwvjeyj';
+    iframe.width = '600';
+    iframe.height = '400';
+    iframe.title = 'Article';
+    modal.showModal();
+});
+
+modalCloseButton.addEventListener('click', () => {
+    modal.close();
+});
+
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.close();
+    }
+});
