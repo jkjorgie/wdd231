@@ -438,3 +438,10 @@ main h2 {
         grid-template-columns: 1fr;
     }
 }
+
+@media (min-width: 700px) and (max-width: 900px) {
+
+    .player-search {
+        grid-template-columns: 1fr 1fr;
+    }
+}
