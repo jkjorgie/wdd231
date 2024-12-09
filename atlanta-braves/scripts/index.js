@@ -17,7 +17,7 @@ async function apiFetch() {
             let data = await response.json();
             displayResults(data);
         } else {
-            throw new Error(`API response error: ${response.text()}`);
+            throw new Error(`Weather API response error: ${response.text()}`);
         }
     } catch (error) {
         console.error('Error fetching data:', error);
