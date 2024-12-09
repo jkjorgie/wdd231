@@ -1,3 +1,5 @@
+import { updateAndLoadPageVisitCount, hamburgerSetup, setLastUpdateTimeStamp } from "./modules.js";
+
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const tempMax = document.querySelector('#temp-max');
@@ -60,10 +62,7 @@ function displayResults(data) {
     weatherIcon.setAttribute('src', iconsrc);
 }
 
-apiFetch();
-
 //modal
-
 const modal = document.querySelector('#modal');
 const article1OpenButton = document.querySelector('#article1');
 const article3OpenButton = document.querySelector('#article3');
@@ -96,3 +95,8 @@ modal.addEventListener('click', (event) => {
         modal.close();
     }
 });
+
+apiFetch();
+updateAndLoadPageVisitCount();
+hamburgerSetup();
+setLastUpdateTimeStamp();

@@ -1,3 +1,5 @@
+import { updateAndLoadPageVisitCount, hamburgerSetup, setLastUpdateTimeStamp } from "./modules.js";
+
 let players = '';
 
 async function loadPlayersFromJson() {
@@ -101,3 +103,7 @@ positionSelect.addEventListener('change', function () {
     // console.log(positionSelect.value);
     displayPlayers(positionSelect.value);
 });
+
+updateAndLoadPageVisitCount();
+hamburgerSetup();
+setLastUpdateTimeStamp();
