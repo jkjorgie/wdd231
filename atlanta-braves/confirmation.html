@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Subscribe to Atlanta Braves Fan Page Confirmation">
+    <meta name="author" content="Jay Jorgensen">
+    <title>Atlanta Braves</title>
+    <meta property="og:title" content="Subscribe to Atlanta Braves Fan Page Confirmation">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Atlanta_Braves_Insignia.svg/1200px-Atlanta_Braves_Insignia.svg.png">
+    <meta property="og:url" content="https://jkjorgie.github.io/wdd231/atlanta-braves/index.html">
+    <meta property="og:description" content="Subscribe to Atlanta Braves Fan Page Confirmation">
+    <meta property="og:image:alt" content="Atlanta Braves">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- <script src="scripts/script.js" defer></script> -->
+    <script type="module" src="scripts/confirmation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+                <img src="images/braves-logo-100x94.webp" alt="Atlanta Braves" width="100" height="94" />
+                <div class="header-title">
+                    <h1>Atlanta Braves</h1>
+                    <p>Fan Page</p>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <!-- &#9776; -->
+                </button>
+                <nav class="header-nav">
+                    <ul class="menu-links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./player-directory.html">Player Directory</a></li>
+                        <li><a href="./subscribe.html" class="active">Subscribe</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <nav class="animate-me">
+            <ul class="menu-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./player-directory.html">Player Directory</a></li>
+                <li><a href="./subscribe.html" class="active">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="thank-you-content">
+            <h2>Thank you for subscribing!</h2>
+            <div class="form-data">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="project-info">
+            <p>WDD231 Class Project</p>
+            <p>Jay Jorgensen</p>
+            <p>&copy; <span id="currentyear"></span> Atlanta Braves Fan Page</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+            <p>Page Visits: <span id="visit-count"></span></p>
+            <a href="./attributions.html">Attributions</a>
+        </div>
+        <!-- <div class="attributions">
+            <a href="./attributions.html">Attributions</a>
+        </div> -->
+    </footer>
+</body>
+
+</html>
