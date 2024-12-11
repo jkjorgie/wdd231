@@ -372,6 +372,10 @@ main h2 {
     padding: 10px;
 }
 
+.checkbox-pair {
+    padding: 10px;
+}
+
 @media (max-width: 699px) {
     .header-nav {
         display: none;

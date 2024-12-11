@@ -65,21 +65,29 @@
                     <h2>Subscribe for Email Content</h2>
 
                     <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required><br><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name"
+                        required><br><br>
 
                     <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required><br><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email"
+                        required><br><br>
 
                     <fieldset>
                         <legend>Preferences:</legend>
-                        <input type="checkbox" id="news-updates" name="preferences" value="news-updates">
-                        <label for="news-updates">Receive news updates</label><br>
-
-                        <input type="checkbox" id="sales-notifications" name="preferences" value="sales-notifications">
-                        <label for="sales-notifications">Receive sales notifications</label><br>
-
-                        <input type="checkbox" id="marketing-partners" name="preferences" value="marketing-partners">
-                        <label for="marketing-partners">Share data with marketing partners</label><br>
+                        <div class="checkbox-pair">
+                            <input type="checkbox" id="news-updates" name="preferences" value="news-updates">
+                            <label for="news-updates">Receive news updates</label><br>
+                        </div>
+                        <div class="checkbox-pair">
+                            <input type="checkbox" id="sales-notifications" name="preferences"
+                                value="sales-notifications">
+                            <label for="sales-notifications">Receive sales notifications</label><br>
+                        </div>
+                        <div class="checkbox-pair">
+                            <input type="checkbox" id="marketing-partners" name="preferences"
+                                value="marketing-partners">
+                            <label for="marketing-partners">Share data with marketing partners</label><br>
+                        </div>
                     </fieldset>
 
                     <br>
@@ -89,7 +97,8 @@
             <div class="subscribe-options">
                 <div class="card subscribe-option">
                     <h3>News Updates</h3>
-                    <p>Get the latest information about the team, including game schedules, and player news -- right to your inbox!</p>
+                    <p>Get the latest information about the team, including game schedules, and player news -- right to
+                        your inbox!</p>
                 </div>
                 <div class="card subscribe-option">
                     <h3>Sales Notifications</h3>
