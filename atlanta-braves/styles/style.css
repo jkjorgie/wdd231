@@ -363,12 +363,13 @@ main h2 {
 }
 
 .thank-you-content {
-    max-width: 800px;
+    padding-top: 20px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-.thank-you-content h2 {
-    /* text-align: center; */
+.form-data {
+    padding: 10px;
 }
 
 @media (max-width: 699px) {

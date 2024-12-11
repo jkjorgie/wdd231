@@ -2,20 +2,22 @@ import { updateAndLoadPageVisitCount, hamburgerSetup, setLastUpdateTimeStamp } f
 
 let urlParams = window.location.href.split('?')[1].split('&');
 
-console.log(urlParams);
-
 function show(dataElement) {
-    console.log(dataElement);
     let result = "";
+    let temp = "";
     urlParams.forEach((element) => {
         if (element.startsWith(dataElement)) {
-            result=element.split('=')[1].replace("%40", "@");
-            result=result.split("%3A").join(":");
-            result=result.split("+").join(" ");
-            result=result.split("%2F").join("/");
+            temp = element.split('=')[1].replace("%40", "@");
+            temp = temp.split("%3A").join(":");
+            temp = temp.split("+").join(" ");
+            temp = temp.split("%2F").join("/");
+            if (result !== '') {
+                result += ', ';
+            }
+            result += temp;
         }
     })
-    return(result);
+    return (result);
 }
 
 const formData = document.querySelector('.form-data');
